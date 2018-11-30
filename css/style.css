@@ -1,0 +1,49 @@
+@charset "UFT-8";
+
+/*ページ全体の共通コード*/
+
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #333;
+    font-size: 1.2em;
+    font-family: "Heragino Kaku Gothic ProN", meiryo, sans-serif;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active{
+    color: #d03c56;
+    text-decoration: none;
+}
+
+
+/*ページのレイアウト*/
+
+.header{
+    width: 100%;
+}
+.wrapper{
+    width: 970px;
+    margin: 30px auto 40px;
+}
+.main{
+    display: block;
+    float: left;
+    width: 660px;
+}
+.sidemeru{
+    float: right;
+    width: 275px;
+}
+.footer{
+    width: 100%;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*P29まで終了*/
