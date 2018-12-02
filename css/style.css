@@ -82,4 +82,5 @@ a:link, a:visited, a:hover, a:active{
     border-radius: 8px;
     color: #666;
     font-size: 1.3rem;
+    letter-spacing: 1px;
 }
