@@ -82,4 +82,41 @@ a:link, a:visited, a:hover, a:active{
     border-radius: 8px;
     color: #666;
     font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: 0.15s;
+}
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover{
+    background-color: #d03c56;
+    color: #fff;
+}
+
+/*特集コンテンツのスタイル*/
+
+.hidden{
+    display: none;
+}
+.hot-topic{
+    display: block;
+    height: 300px;
+    margin-bottom: 300px;
+    box-shadow: 0 6px 4px -4px rgba(0,0,0,0.15);
+    transition: opacity 0.15s;
+}
+.hot-topic:hover{
+    opacity: 0.85;
+}
+.hot-topic image{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 105px 25px 0;
+    background-color: #2d3d54;
+}
+.hot-topic .content{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 105px 25px 0;
+    background-color: #2d3d54;
 }
