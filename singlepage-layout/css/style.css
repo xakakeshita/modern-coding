@@ -96,6 +96,9 @@ body{
 
 /*worksのコンテンツ*/
 
+.works{
+    padding: 80px 30px;
+}
 .works-wrapper{
     display: table;
     width: 100%;
@@ -136,7 +139,7 @@ body{
     margin: 0 0 60%;
 }
 .works-box:nth-child(odd) .works-image{
-
+    margin: 60% 0 0;
 }
 .works-box:nth-child(odd) .works-description,
 .works-box:nth-child(odd)::after{
@@ -249,4 +252,76 @@ body{
 .contact-form input[type=submit]:hover{
     background-color: rgba(255,255,255,0.05);
 }
-.
+
+/*レスポンシブ対応*/
+
+@media (max-width: 768px){
+    .site-title-sub::before,
+    .site-title-sub::after{
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .site-title-sub{
+        font-size: 1.7rem;
+    }
+    .site-title{
+        margin-top: 35px;
+        font-size: 5rem;
+    }
+    .header{
+        padding-top: 60px;
+    }
+    .button{
+        margin: 10px;
+    }
+    .button:hover{
+        opacity: 1;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    body{
+        font-size: 1.3rem;
+    }
+    .about-text{
+        line-height: 1.8;
+    }
+    .works-wrapper,
+    .works-box{
+        display: block;
+    }
+    .works-image{
+        display: none;
+    }
+    .works-description{
+        position: relative;
+    }
+    .work-box::after{
+        top: 0;
+        height: 100%;
+        background-size: cover;
+    }
+    .skills-wrapper,
+    .skill-box{
+        display: block;
+    }
+    .skill-icon{
+        width: 100px;
+        height: 100px;
+        font-size: 5rem;
+        line-height: 92px;
+    }
+    .skill-box{
+        margin: 40px auto;
+    }
+    .skill-text{
+        margin: 0;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .contact{
+        padding-bottom: 80px;
+    }
+}
