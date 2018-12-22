@@ -7,6 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header item">
+        <h1>
+            <a href="#dummy">
+                <img class="logo" src="images/logo.png" alt="SAMPLE SITE 2">
+            </a>
+        </h1>
+        <nav class="nav">
+            <ul>
+                <li class="nav-item"><a href="#dummy">HOME</a></li>
+                <li class="nav-item"><a href="#dummy">ABOUT</a></li>
+                <li class="nav-item"><a href="#dummy">MAIN DISH</a></li>
+                <li class="nav-item"><a href="#dummy">APPETIZER</a></li>
+                <li class="nav-item"><a href="#dummy">BREAK TIME</a></li>
+                <li class="nav-item"><a href="#dummy">COLUMN</a></li>
+                <li class="nav-item"><a href="#dummy">OTHER</a></li>
+            </ul>
+        </nav>
+    </header><!--header item-->
+    <!--item-->
+    <section class="item item-l item-maindish">
+    <a href="#">
+        <img class="image" src="images/image_L_1.jpg" alt="メインディッシュ">
+        <div class="category">MAIN DISH</div>
+        <p class="description">
+            Lorem ipsum dolor sit amet,
+            consectetur adipidicing alit,
+            sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.
+        </p>
+    </a>
+</section><!--.item .item-maindish L-->
+    <section class="item item-m item-appetizer">
+        <a href="#">
+            <img class="image" src="images/image_M_1.jpg" alt="前菜">
+            <div class="category">APPETIZER</div>
+            <p class="description">
+                Lorem ipsum dolor sit amet,
+                consectetur adipidicing alit
+            </p>
+        </a>
+    </section><!--.item .item-appetizer M-->
+    <section class="item item-m item-maindish">
+        <a href="#">
+            <img class="image" src="images/image_M_2.jpg" alt="メインディッシュ">
+            <div class="category">MAIN DISH</div>
+            <p class="description">
+                Lorem ipsum dolor sit amet,
+                consectetur adipidicing alit,
+                sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+            </p>
+        </a>
+    </section><!--.item .item-maindish M-->
     <section class="item item-maindish">
         <a href="#">
             <img class="image" src="images/image_S_1.jpg" alt="メインディッシュ">
@@ -29,6 +82,17 @@
             </p>
         </a>
     </section><!--.item .item-appetizer-->
+    <section class="item item-m item-breaktime">
+        <a href="#">
+            <img class="image" src="images/image_M_3.jpg" alt="おやつの時間">
+            <div class="category">BREAK TIME</div>
+            <p class="description">
+                Lorem ipsum dolor sit amet,
+                consectetur adipidicing alit,
+                sed do eiusmod tempor incididunt
+            </p>
+        </a>
+    </section><!--.item .item-breaktime M-->
     <section class="item item-column">
         <a href="#">
             <img class="image" src="images/image_S_3.jpg" alt="コラム">
@@ -77,7 +141,7 @@
     </section><!--.item .item-breaktime-->
     <section class="item item-maindish">
         <a href="#">
-            <img class="image" src="images/image_S_5.jpg" alt="メインディッシュ">
+            <img class="image" src="images/image_S_7.jpg" alt="メインディッシュ">
             <div class="category">MAIN DISH</div>
             <p class="description">
                 Lorem ipsum dolor sit amet,
@@ -89,7 +153,7 @@
     </section><!--.item .item-maindish-->
     <section class="item item-breaktime">
         <a href="#">
-            <img class="image" src="images/image_S_6.jpg" alt="おやつの時間">
+            <img class="image" src="images/image_S_8.jpg" alt="おやつの時間">
             <div class="category">BREAK TIME</div>
             <p class="description">
                 Lorem ipsum dolor sit amet,
@@ -99,9 +163,21 @@
             </p>
         </a>
     </section><!--.item .item-breaktime-->
+    <section class="item item-m item-appetizer">
+        <a href="#">
+            <img class="image" src="images/image_M_4.jpg" alt="前菜">
+            <div class="category">APPETIZER</div>
+            <p class="description">
+                Lorem ipsum dolor sit amet,
+                consectetur adipidicing alit,
+                sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua.
+            </p>
+        </a>
+    </section><!--.item .item-appetizer M-->
     <section class="item item-column">
         <a href="#">
-            <img class="image" src="images/image_S_3.jpg" alt="コラム">
+            <img class="image" src="images/image_S_9.jpg" alt="コラム">
             <div class="category">COLUMN</div>
             <p class="description">
                 Lorem ipsum dolor sit amet,
@@ -111,7 +187,7 @@
     </section><!--.item .item-column-->
     <section class="item item-maindish">
         <a href="#">
-            <img class="image" src="images/image_S_5.jpg" alt="メインディッシュ">
+            <img class="image" src="images/image_S_10.jpg" alt="メインディッシュ">
             <div class="category">MAIN DISH</div>
             <p class="description">
                 Lorem ipsum dolor sit amet,
@@ -119,13 +195,17 @@
             </p>
         </a>
     </section><!--.item .item-maindish-->
+
+    <!--Script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.js"></script>
     <script>
-        new Masonry('body',{
-            itemSelector: '.item',
-            columnWidth: 180,
-            gutter:4
-        });
+        window.onload = function() {
+            new Masonry('body', {
+                itemSelector: '.item',
+                columnWidth: 180,
+                gutter: 4
+            });
+        };
     </script>
 
 </body>
